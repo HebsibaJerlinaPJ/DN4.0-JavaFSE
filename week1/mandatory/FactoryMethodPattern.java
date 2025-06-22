@@ -9,7 +9,7 @@ interface Document {
 // Step 2: Concrete Word Document Class
 class WordDocument implements Document {
     public void open() {
-        openFile("SingletonPatternExample.docx");  // Ensure this file exists in the same folder
+        openFile("SingletonPatternExample.docx");  
     }
 
     private void openFile(String filename) {
@@ -44,6 +44,6 @@ public class FactoryMethodPattern {
     public static void main(String[] args) {
         DocumentFactory factory = new WordFactory();
         Document wordDoc = factory.createDocument();
-        wordDoc.open();  // This will attempt to open "example.docx"
+        wordDoc.open();  
     }
 }
